@@ -1,0 +1,62 @@
+{
+	"info": {
+		"name": "ShowAPI星座运势",
+		"_postman_id": "26d0f2cf-94da-0018-b13e-71933a54cbfa",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Horoscopes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://route.showapi.com/872-1?showapi_appid=56246&showapi_sign=bd2bd7f429d246f0a7770d3a48ee0165&star=baiyang&needYear=1&needMonth=1",
+					"protocol": "https",
+					"host": [
+						"route",
+						"showapi",
+						"com"
+					],
+					"path": [
+						"872-1"
+					],
+					"query": [
+						{
+							"key": "showapi_appid",
+							"value": "56246",
+							"equals": true,
+							"description": "see https://www.showapi.com/app/editApp"
+						},
+						{
+							"key": "showapi_sign",
+							"value": "bd2bd7f429d246f0a7770d3a48ee0165",
+							"equals": true,
+							"description": "see https://www.showapi.com/app/editApp"
+						},
+						{
+							"key": "star",
+							"value": "baiyang",
+							"equals": true,
+							"description": "拼音"
+						},
+						{
+							"key": "needYear",
+							"value": "1",
+							"equals": true
+						},
+						{
+							"key": "needMonth",
+							"value": "1",
+							"equals": true
+						}
+					]
+				},
+				"description": "Get details of a specific constellation"
+			},
+			"response": []
+		}
+	]
+}
